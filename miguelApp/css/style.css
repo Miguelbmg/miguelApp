@@ -1,0 +1,14 @@
+*{
+    margin: auto;
+}
+img{
+    width: 115px;
+    height: 75px;
+}
+.navbar{
+    background-image: url(../images/depositphotos_11564434-stock-photo-nebula-gas-cloud-in-deep.webp);
+}
+#navMenu a{
+    color: white;
+    background-color: black;
+}

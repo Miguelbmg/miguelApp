@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main-menu>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="images/logoCampus.png"  alt="">CAMPUS</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="Reclutas.html">Reclutas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="team.html">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="skill.html">skill</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="moduloSkill.html">modulosSkill</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="evaluacion.html">Evaluacion</a>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </main-menu>
+    <div class="container1 mt-2">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+                <form id="frmData">
+                    <div class="mb-3">
+                        <label for="InputId1" class="form-label">ID</label>
+                        <input type="text" class="form-control" id="IdR1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="InputNombre" class="form-label"  aria-placeholder="ingrese su nombre">Nombre</label>
+                      <input type="text" class="form-control" id="NombreR" aria-describedby="nombrelHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="InputEdad1" class="form-label">Edad</label>
+                      <input type="text" class="form-control" id="edadR1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputEmail1" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="emailR1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="InputDireccion1" class="form-label">Direccion</label>
+                        <input type="text" class="form-control" id="direccionR1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="InputFnacimiento1" class="form-label">fecha de nacimiento</label>
+                        <input type="text" class="form-control" id="fNacimientoR1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="InputIdentificacion1" class="form-label">N.identificacion</label>
+                        <input type="text" class="form-control" id="NidentificacionR1">
+                      </div>                
+                      <div class="mb-3">
+                        <label for="InputIngreso1" class="form-label">fecha de ingreso</label>
+                        <input type="text" class="form-control" id="fechaIngresoR1">
+                      </div>                
+                      <div class="mb-3">
+                        <label for="InputTeam1" class="form-label">ID.team</label>
+                        <input type="text" class="form-control" id="IdTeamR1">
+                      </div>
+                    </div>
+                    <button type="button" id="btnguardar">guardar</button>
+                </form>
+            </div>
+            </div>
+    </div>
+    <div class="container">
+        <h2>lista Reclutas</h2>
+        <table class="table table-hover" id="tablaReclutas">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>nombre</th>
+                    <th>Detalles</th>
+                    <th>team</th>
+                </tr>
+                <tbody>
+
+                </tbody>
+            </thead>
+        </table>
+    </div>
+    <script src="js/dbReclutas.js"></script>
+    <script src="js/frmReclutas.js"></script>
+</body>
+</html>
